@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height);
+  color: var(--primary-color);
+}
