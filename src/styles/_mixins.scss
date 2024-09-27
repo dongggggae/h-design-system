@@ -1,0 +1,62 @@
+/* Mixins */
+
+// Utilites
+@mixin generate-utility($property, $values, $property-class: null) {
+  @each $key, $value in $values {
+    @if $property-class {
+      .#{$property-class}-#{$key} {
+        #{$property}: $value;
+      }
+    } @else {
+      .#{$property}-#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+// Badge
+@mixin generate-badge($name, $badge-bg, $badge-color: $white) {
+  --#{$prefix}badge-color: #{$badge-color};
+  --#{$prefix}badge-border-color: #{$badge-bg};
+  --#{$prefix}badge-bg: #{$badge-bg};
+}
+
+@mixin generate-outline-badges($name, $badge-color, $badge-bg: $white) {
+  --#{$prefix}badge-color: #{$badge-color};
+  --#{$prefix}badge-border-color: #{$badge-color};
+  --#{$prefix}badge-bg: #{$badge-bg};
+}
+
+// Button
+@mixin generate-button($args...) {
+  @each $key, $value in keywords($args) {
+    --#{$prefix}btn-#{$key}: #{$value};
+  }
+}
+
+// Icon
+@mixin generate-icon($icons) {
+  .icon {
+    @each $key, $value in $icons {
+      $class: map-get($value, class);
+      $image: map-get($value, image);
+      $variant: map-get($value, variant);
+
+      --icon-#{$class}: #{escape-svg(#{$image})};
+
+      &__#{$class} {
+        &::after {
+          content: '';
+          @if ($variant == 'none') {
+            background-image: var(--icon-#{$class});
+            background-color: transparent;
+          } @else {
+            -webkit-mask-image: var(--icon-#{$class});
+            mask-image: var(--icon-#{$class});
+          }
+        }
+      }
+    }
+  }
+}
