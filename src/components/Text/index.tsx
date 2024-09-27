@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from '@utils/classNames';
 
-interface TextProps {
+export interface TextProps {
   children: React.ReactNode;
   tag?: 'span' | 'strong' | 'p';
   size?: 'lg' | 'md' | 'sm' | 'xs' | 'xxs';

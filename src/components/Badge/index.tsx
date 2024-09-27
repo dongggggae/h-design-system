@@ -5,7 +5,7 @@ import classNames from '@utils/classNames';
 import BadgeText from './Text';
 import '@styles/hds.scss';
 
-interface BadgeProps {
+export interface BadgeProps {
   text: string;
   size?: 'md' | 'sm';
   state?: 'success' | 'warnning' | 'error' | 'information';
