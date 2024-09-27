@@ -1,5 +1,16 @@
+/* Hyun-Design-System */
+
+@import '_functions';
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
+
 @import 'root';
+@import 'fonts';
 @import 'reset';
 @import 'base';
+@import 'type';
 
 @import 'badge';
+
+@import 'generate';

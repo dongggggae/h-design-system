@@ -1,7 +1,10 @@
+/* Root */
+
 :root {
-  --primary-color: #111111;
-  --secondary-color: #555555;
-  --tertiary-color: #949494;
-  --font-size-base: 16px;
-  --font-line-height: 24px;
+  @each $key, $value in $root-color {
+    --#{$key}: #{$value};
+  }
+  @each $key, $value in $root-space {
+    --#{$prefix}#{$key}: #{$value};
+  }
 }
