@@ -25,6 +25,3 @@ dist-ssr
 
 # package
 package-lock.json
-
-# vite build
-/vite.config.js.timestamp-*
