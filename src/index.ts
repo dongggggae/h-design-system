@@ -10,5 +10,8 @@ export type { HeadingProps } from '@components/Heading';
 export { default as Icon } from '@components/Icon';
 export type { IconProps } from '@components/Icon';
 
+export { default as Stack } from '@components/Stack';
+export type { StackProps } from '@components/Stack';
+
 export { default as Text } from '@components/Text';
 export type { TextProps } from '@components/Text';
