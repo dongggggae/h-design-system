@@ -22,5 +22,14 @@ export type { ProgressProps } from '@components/Progress';
 export { default as Stack } from '@components/Stack';
 export type { StackProps } from '@components/Stack';
 
+export { default as Table } from '@components/Table';
+export type { TableProps } from '@components/Table';
+
+export { default as TableData } from '@components/Table/TableData';
+export type { TableDataProps } from '@components/Table/TableData';
+
+export { default as TableHeader } from '@components/Table/TableHeader';
+export type { TableHeaderProps } from '@components/Table/TableHeader';
+
 export { default as Text } from '@components/Text';
 export type { TextProps } from '@components/Text';
