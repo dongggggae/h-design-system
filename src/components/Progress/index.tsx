@@ -29,4 +29,6 @@ const Progress: React.FC<ProgressProps> = ({ now, label, state = 'success', clas
   );
 };
 
+Progress.displayName = 'Progress';
+
 export default Progress;
