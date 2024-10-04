@@ -43,9 +43,9 @@
       $image: map-get($value, image);
       $variant: map-get($value, variant);
 
-      --icon-#{$class}: #{escape-svg(#{$image})};
-
       &__#{$class} {
+        --icon-#{$class}: #{escape-svg(#{$image})};
+
         &::after {
           content: '';
           @if ($variant == 'none') {
