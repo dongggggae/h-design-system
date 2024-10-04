@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 
 import classNames from '@utils/classNames';
 
-interface ProgressProps {
+export interface ProgressProps {
   now: number;
   label?: boolean;
   state?: 'success' | 'warnning' | 'error' | 'information';
