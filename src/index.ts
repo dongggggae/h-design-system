@@ -10,6 +10,9 @@ export type { HeadingProps } from '@components/Heading';
 export { default as Icon } from '@components/Icon';
 export type { IconProps } from '@components/Icon';
 
+export { default as Progress } from '@components/Progress';
+export type { ProgressProps } from '@components/Progress';
+
 export { default as Stack } from '@components/Stack';
 export type { StackProps } from '@components/Stack';
 
