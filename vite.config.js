@@ -7,7 +7,7 @@ import path from 'path';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [react(), dts({ rollupTypes: true })],
   server: {
     port: 8080,
   },
@@ -27,10 +27,10 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'MyLibrary',
-      fileName: (format) => `index.${format}.js`,
-      formats: ['es', 'cjs'],
+      fileName: 'hds',
     },
     rollupOptions: {
+      external: ['react'],
       output: {
         globals: {
           react: 'React',
