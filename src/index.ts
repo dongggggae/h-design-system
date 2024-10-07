@@ -10,6 +10,15 @@ export type { ButtonProps } from '@components/Btn';
 export { default as BtnText } from '@components/Btn/Text';
 export type { BtnTextProps } from '@components/Btn/Text';
 
+export { default as FormsFeedback } from '@components/Forms/FormsFeedback';
+export type { FormsFeedbackProps } from '@components/Forms/FormsFeedback';
+
+export { default as FormsInput } from '@components/Forms/FormsInput';
+export type { FormsInputProps } from '@components/Forms/FormsInput';
+
+export { default as FormsLabel } from '@components/Forms/FormsLabel';
+export type { FormsLabelProps } from '@components/Forms/FormsLabel';
+
 export { default as Heading } from '@components/Heading';
 export type { HeadingProps } from '@components/Heading';
 
