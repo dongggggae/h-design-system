@@ -19,6 +19,9 @@ export type { FormsInputProps } from '@components/Forms/FormsInput';
 export { default as FormsLabel } from '@components/Forms/FormsLabel';
 export type { FormsLabelProps } from '@components/Forms/FormsLabel';
 
+export { default as FormsSelect } from '@components/Forms/FormsSelect';
+export type { FormsSelectProps } from '@components/Forms/FormsSelect';
+
 export { default as Heading } from '@components/Heading';
 export type { HeadingProps } from '@components/Heading';
 
