@@ -22,6 +22,9 @@ export type { FormsLabelProps } from '@components/Forms/FormsLabel';
 export { default as FormsSelect } from '@components/Forms/FormsSelect';
 export type { FormsSelectProps } from '@components/Forms/FormsSelect';
 
+export { default as FormsTextarea } from '@components/Forms/FormsTextarea';
+export type { FormsTextareaProps } from '@components/Forms/FormsTextarea';
+
 export { default as Heading } from '@components/Heading';
 export type { HeadingProps } from '@components/Heading';
 
