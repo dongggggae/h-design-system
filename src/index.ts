@@ -10,6 +10,9 @@ export type { ButtonProps } from '@components/Btn';
 export { default as BtnText } from '@components/Btn/Text';
 export type { BtnTextProps } from '@components/Btn/Text';
 
+export { default as Container } from '@components/Container';
+export type { ContainerProps } from '@components/Container';
+
 export { default as FormsCheck } from '@components/Forms/FormsCheck';
 export type { FormsCheckProps } from '@components/Forms/FormsCheck';
 
