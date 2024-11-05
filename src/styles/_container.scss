@@ -1,0 +1,14 @@
+.container {
+  --#{$prefix}margin-x: 40px;
+  --#{$prefix}margin-y: 0;
+
+  width: 100%;
+  max-width: none;
+  transition: all 0.35s;
+  background-color: #0f0;
+
+  @media screen and (max-width: 991px) {
+    padding-right: calc(var(--#{$prefix}margin-x) * 0.5);
+    padding-left: calc(var(--#{$prefix}margin-x) * 0.5);
+  }
+}
