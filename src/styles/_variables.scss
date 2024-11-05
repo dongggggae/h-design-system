@@ -180,17 +180,23 @@ $font-colors: (
 );
 
 // Fonts-size
+$text-font-size-xxl: 24px;
+$text-font-size-xl: 20px;
 $text-font-size-lg: 18px;
 $text-font-size-md: 16px;
 $text-font-size-sm: 14px;
 $text-font-size-xs: 12px;
 $text-font-size-xxs: 10px;
+$text-line-height-xxl: 36px;
+$text-line-height-xl: 32px;
 $text-line-height-lg: 32px;
 $text-line-height-md: 24px;
 $text-line-height-sm: 24px;
 $text-line-height-xs: 20px;
 $text-line-height-xxs: 16px;
 $text-sizes: (
+  xxl: $text-font-size-xxl $text-line-height-xxl,
+  xl: $text-font-size-xl $text-line-height-xl,
   lg: $text-font-size-lg $text-line-height-lg,
   md: $text-font-size-md $text-line-height-md,
   sm: $text-font-size-sm $text-line-height-sm,

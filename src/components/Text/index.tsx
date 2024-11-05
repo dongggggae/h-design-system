@@ -5,7 +5,7 @@ import classNames from '@utils/classNames';
 export interface TextProps {
   children: React.ReactNode;
   tag?: 'span' | 'strong' | 'p';
-  size?: 'lg' | 'md' | 'sm' | 'xs' | 'xxs';
+  size?: 'xxl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs';
   color?: 'primary' | 'secondary' | 'tertiary' | 'information' | 'positive' | 'caution' | 'negative';
   weight?: 'light' | 'regular' | 'medium' | 'semibold' | 'bold';
   className?: string | string[];
