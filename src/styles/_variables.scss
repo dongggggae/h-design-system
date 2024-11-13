@@ -1,52 +1,52 @@
 /* Variables */
 
 // Colors
-$white: #ffffff;
-$gray100: #fcfcfc;
-$gray150: #f5f5f5;
-$gray200: #efefef;
-$gray250: #e8e8e8;
-$gray300: #dfdfdf;
-$gray350: #c8c8c8;
-$gray400: #b7b7b7;
-$gray500: #949494;
-$gray600: #777777;
-$gray650: #616161;
-$gray700: #555555;
-$gray750: #3f3f3f;
-$gray800: #2a2a2a;
-$gray850: #1f1f1f;
-$gray900: #111111;
-$black: #000000;
-$red400: #ff96a3;
-$red500: #ff697a;
-$red600: #ff334b;
-$red700: #e5172f;
-$red800: #c9162b;
-$amber400: #ffeb94;
-$amber500: #ffd86b;
-$amber600: #ffc53d;
-$amber700: #fcb321;
-$amber800: #fa9e1e;
-$green400: #6de67b;
-$green500: #5bdd6a;
-$green600: #06c755;
-$green700: #3d9e43;
-$green800: #1e6e1e;
-$blue300: #c2d2ff;
-$blue400: #96b2ff;
-$blue500: #638dff;
-$blue600: #4d73ff;
-$blue700: #2f59cc;
-$navy400: #c8cfdc;
-$navy500: #98a0b3;
-$navy600: #707991;
-$navy700: #464f69;
-$navy800: #323b54;
-$navy900: #202a43;
-$overlay: rgba(0, 0, 0, 0.2);
+$white: #ffffff !default;
+$gray100: #fcfcfc !default;
+$gray150: #f5f5f5 !default;
+$gray200: #efefef !default;
+$gray250: #e8e8e8 !default;
+$gray300: #dfdfdf !default;
+$gray350: #c8c8c8 !default;
+$gray400: #b7b7b7 !default;
+$gray500: #949494 !default;
+$gray600: #777777 !default;
+$gray650: #616161 !default;
+$gray700: #555555 !default;
+$gray750: #3f3f3f !default;
+$gray800: #2a2a2a !default;
+$gray850: #1f1f1f !default;
+$gray900: #111111 !default;
+$black: #000000 !default;
+$red400: #ff96a3 !default;
+$red500: #ff697a !default;
+$red600: #ff334b !default;
+$red700: #e5172f !default;
+$red800: #c9162b !default;
+$amber400: #ffeb94 !default;
+$amber500: #ffd86b !default;
+$amber600: #ffc53d !default;
+$amber700: #fcb321 !default;
+$amber800: #fa9e1e !default;
+$green400: #6de67b !default;
+$green500: #5bdd6a !default;
+$green600: #06c755 !default;
+$green700: #3d9e43 !default;
+$green800: #1e6e1e !default;
+$blue300: #c2d2ff !default;
+$blue400: #96b2ff !default;
+$blue500: #638dff !default;
+$blue600: #4d73ff !default;
+$blue700: #2f59cc !default;
+$navy400: #c8cfdc !default;
+$navy500: #98a0b3 !default;
+$navy600: #707991 !default;
+$navy700: #464f69 !default;
+$navy800: #323b54 !default;
+$navy900: #202a43 !default;
+$overlay: rgba(0, 0, 0, 0.2) !default;
 
-$root-color: ();
+$root-color: () !default;
 $root-color: map-merge(
   (
     'white': #{$white},
@@ -106,7 +106,7 @@ $root-color: map-merge(
 );
 
 $spacing-base: 16px;
-$root-space: ();
+$root-space: () !default;
 $root-space: map-merge(
   (
     0: $spacing-base * 0,
@@ -135,40 +135,40 @@ $escaped-characters: (('<', '%3c'), ('>', '%3e'), ('#', '%23'), ('(', '%28'), ('
 $prefix: hds-;
 
 // Font Face
-$font-face-name: AppleSDGothicNeo;
-$font-face-path: '/fonts/';
-$font-face-exts: woff;
+$font-face-name: AppleSDGothicNeo !default;
+$font-face-path: '/fonts/' !default;
+$font-face-exts: woff !default;
 $font-face-files: (
   'Light': 300 normal,
   'Regular': 400 normal,
   'Medium': 500 normal,
   'SemiBold': 600 normal,
   'Bold': 700 normal,
-);
+) !default;
 
 // Fonts
-$font-size-base: 16px;
-$line-height-base: 1.2;
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-weight-base: $font-weight-regular;
+$font-size-base: 16px !default;
+$line-height-base: 1.2 !default;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-regular !default;
 $font-weights: (
   light: $font-weight-light,
   regular: $font-weight-regular,
   medium: $font-weight-medium,
   semibold: $font-weight-semibold,
   bold: $font-weight-bold,
-);
+) !default;
 $font-family-system: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', 'Segoe UI',
-  'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji';
-$font-family-hds: noto;
-$letter-spacing-base: -0.2px;
-$word-break-base: keep-all;
-$heading-font-color-base: $gray900;
-$text-font-color-base: $gray700;
+  'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji' !default;
+$font-family-hds: noto !default;
+$letter-spacing-base: -0.2px !default;
+$word-break-base: keep-all !default;
+$heading-font-color-base: $gray900 !default;
+$text-font-color-base: $gray700 !default;
 $font-colors: (
   primary: $gray900,
   secondary: $gray700,
@@ -177,23 +177,23 @@ $font-colors: (
   positive: $green600,
   caution: $amber600,
   negative: $red600,
-);
+) !default;
 
 // Fonts-size
-$text-font-size-xxl: 24px;
-$text-font-size-xl: 20px;
-$text-font-size-lg: 18px;
-$text-font-size-md: 16px;
-$text-font-size-sm: 14px;
-$text-font-size-xs: 12px;
-$text-font-size-xxs: 10px;
-$text-line-height-xxl: 36px;
-$text-line-height-xl: 32px;
-$text-line-height-lg: 32px;
-$text-line-height-md: 24px;
-$text-line-height-sm: 24px;
-$text-line-height-xs: 20px;
-$text-line-height-xxs: 16px;
+$text-font-size-xxl: 24px !default;
+$text-font-size-xl: 20px !default;
+$text-font-size-lg: 18px !default;
+$text-font-size-md: 16px !default;
+$text-font-size-sm: 14px !default;
+$text-font-size-xs: 12px !default;
+$text-font-size-xxs: 10px !default;
+$text-line-height-xxl: 36px !default;
+$text-line-height-xl: 32px !default;
+$text-line-height-lg: 32px !default;
+$text-line-height-md: 24px !default;
+$text-line-height-sm: 24px !default;
+$text-line-height-xs: 20px !default;
+$text-line-height-xxs: 16px !default;
 $text-sizes: (
   xxl: $text-font-size-xxl $text-line-height-xxl,
   xl: $text-font-size-xl $text-line-height-xl,
@@ -202,27 +202,27 @@ $text-sizes: (
   sm: $text-font-size-sm $text-line-height-sm,
   xs: $text-font-size-xs $text-line-height-xs,
   xxs: $text-font-size-xxs $text-line-height-xxs,
-);
+) !default;
 
 // Heading
-$h1-font-size: 56px;
-$h2-font-size: 48px;
-$h3-font-size: 40px;
-$h4-font-size: 32px;
-$h5-font-size: 24px;
-$h6-font-size: 20px;
-$h1-line-height: 72px;
-$h2-line-height: 64px;
-$h3-line-height: 56px;
-$h4-line-height: 48px;
-$h5-line-height: 40px;
-$h6-line-height: 32px;
-$h1-font-weight: 700;
-$h2-font-weight: 700;
-$h3-font-weight: 600;
-$h4-font-weight: 600;
-$h5-font-weight: 500;
-$h6-font-weight: 500;
+$h1-font-size: 56px !default;
+$h2-font-size: 48px !default;
+$h3-font-size: 40px !default;
+$h4-font-size: 32px !default;
+$h5-font-size: 24px !default;
+$h6-font-size: 20px !default;
+$h1-line-height: 72px !default;
+$h2-line-height: 64px !default;
+$h3-line-height: 56px !default;
+$h4-line-height: 48px !default;
+$h5-line-height: 40px !default;
+$h6-line-height: 32px !default;
+$h1-font-weight: 700 !default;
+$h2-font-weight: 700 !default;
+$h3-font-weight: 600 !default;
+$h4-font-weight: 600 !default;
+$h5-font-weight: 500 !default;
+$h6-font-weight: 500 !default;
 $heading-sizes: (
   h1: $h1-font-size $h1-line-height $h1-font-weight,
   h2: $h2-font-size $h2-line-height $h2-font-weight,
@@ -230,69 +230,69 @@ $heading-sizes: (
   h4: $h4-font-size $h4-line-height $h4-font-weight,
   h5: $h5-font-size $h5-line-height $h5-font-weight,
   h6: $h6-font-size $h6-line-height $h6-font-weight,
-);
+) !default;
 
 // Body
-$body-bg: $white;
-$body-font-family: $font-family-hds, $font-family-system;
-$body-font-size: $font-size-base;
-$body-font-color: $black;
-$body-word-break: $word-break-base;
+$body-bg: $white !default;
+$body-font-family: $font-family-hds, $font-family-system !default;
+$body-font-size: $font-size-base !default;
+$body-font-color: $black !default;
+$body-word-break: $word-break-base !default;
 
 // Layout
-$layout-sidebar-width: 255px;
-$layout-header-height: 70px;
-$layout-occupy-start-top: $layout-header-height;
-$layout-occupy-start-left: $layout-sidebar-width;
-$layout-border-width: 2px;
-$layout-border-wtyle: solid;
-$layout-border-color: $gray200;
+$layout-sidebar-width: 255px !default;
+$layout-header-height: 70px !default;
+$layout-occupy-start-top: $layout-header-height !default;
+$layout-occupy-start-left: $layout-sidebar-width !default;
+$layout-border-width: 2px !default;
+$layout-border-wtyle: solid !default;
+$layout-border-color: $gray200 !default;
 
 // Zindex
-$zindex-backdrop: 1;
-$zindex-focused: 2;
-$zindex-stack: 5;
-$zindex-positioner: 10;
-$zindex-layout-sidebar: 20;
-$zindex-layout-header: 19;
-$zindex-overlay: 90;
-$zindex-toaster: 99;
+$zindex-backdrop: 1 !default;
+$zindex-focused: 2 !default;
+$zindex-stack: 5 !default;
+$zindex-positioner: 10 !default;
+$zindex-layout-sidebar: 20 !default;
+$zindex-layout-header: 19 !default;
+$zindex-overlay: 90 !default;
+$zindex-toaster: 99 !default;
 
 // Accordion
-$accordion-padding-x: 16px;
-$accordion-padding-y: 16px;
-$accordion-bg: $white;
-$accordion-border-width: 0;
-$accordion-border-color: $gray200;
-$accordion-font-size: 16px;
-$accordion-line-height: 24px;
-$accordion-color: $gray900;
-$accordion-icon-width: 20px;
-$accordion-icon-height: 20px;
-$accordion-icon-bg: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6667 13.3333L10 6.66663L3.33334 13.3333' stroke='%23b7b7b7' stroke-width='1.4' stroke-linecap='square'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.6667 14.1583L10 7.49159L3.33333 14.1583L2.50837 13.3333L10 5.84167L17.4916 13.3333L16.6667 14.1583Z' fill='%23b7b7b7'/%3E%3C/svg%3E%0A");
-$accordion-header-border-width: 1px;
-$accordion-header-border-color: $accordion-border-color;
-$accordion-body-padding-x: $accordion-padding-x;
-$accordion-body-padding-y: $accordion-padding-y;
-$accordion-body-bg: $gray100;
-$accordion-body-border-width: 1px;
-$accordion-body-border-color: $accordion-border-color;
-$accordion-body-color: $gray700;
-$accordion-active-header-border-color: $black;
-$accordion-active-body-border-color: $accordion-border-color;
-$accordion-active-icon-bg: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.33333 5.84174L10 12.5084L16.6667 5.84174L17.4916 6.6667L10 14.1583L2.50838 6.6667L3.33333 5.84174Z' fill='%23111111'/%3E%3C/svg%3E%0A");
+$accordion-padding-x: 16px !default;
+$accordion-padding-y: 16px !default;
+$accordion-bg: $white !default;
+$accordion-border-width: 0 !default;
+$accordion-border-color: $gray200 !default;
+$accordion-font-size: 16px !default;
+$accordion-line-height: 24px !default;
+$accordion-color: $gray900 !default;
+$accordion-icon-width: 20px !default;
+$accordion-icon-height: 20px !default;
+$accordion-icon-bg: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6667 13.3333L10 6.66663L3.33334 13.3333' stroke='%23b7b7b7' stroke-width='1.4' stroke-linecap='square'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.6667 14.1583L10 7.49159L3.33333 14.1583L2.50837 13.3333L10 5.84167L17.4916 13.3333L16.6667 14.1583Z' fill='%23b7b7b7'/%3E%3C/svg%3E%0A") !default;
+$accordion-header-border-width: 1px !default;
+$accordion-header-border-color: $accordion-border-color !default;
+$accordion-body-padding-x: $accordion-padding-x !default;
+$accordion-body-padding-y: $accordion-padding-y !default;
+$accordion-body-bg: $gray100 !default;
+$accordion-body-border-width: 1px !default;
+$accordion-body-border-color: $accordion-border-color !default;
+$accordion-body-color: $gray700 !default;
+$accordion-active-header-border-color: $black !default;
+$accordion-active-body-border-color: $accordion-border-color !default;
+$accordion-active-icon-bg: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.33333 5.84174L10 12.5084L16.6667 5.84174L17.4916 6.6667L10 14.1583L2.50838 6.6667L3.33333 5.84174Z' fill='%23111111'/%3E%3C/svg%3E%0A") !default;
 
 // Badges
-$badges-height: 28px;
-$badges-padding-y: 1px;
-$badges-padding-x: 10px;
-$badges-bg: $white;
-$badges-border-width: 1px;
-$badges-border-radius: 8px;
-$badges-color: $white;
-$badges-text-font-size: 12px;
-$badges-text-line-height: 16px;
-$badge-sizes: ();
+$badges-height: 28px !default;
+$badges-padding-y: 1px !default;
+$badges-padding-x: 10px !default;
+$badges-bg: $white !default;
+$badges-border-width: 1px !default;
+$badges-border-radius: 8px !default;
+$badges-color: $white !default;
+$badges-text-font-size: 12px !default;
+$badges-text-line-height: 16px !default;
+$badge-sizes: () !default;
 $badge-sizes: (
   'md': (
     'height': 28px,
@@ -310,16 +310,16 @@ $badge-sizes: (
     'text-font-size': $text-font-size-xs,
     'text-line-height': $text-line-height-xs,
   ),
-);
+) !default;
 
 // Buttons
-$btn-height: 48px;
-$btn-padding-x: 14px;
-$btn-text-font-size: $text-font-size-sm;
-$btn-text-line-height: $text-line-height-sm;
-$btn-text-decoration: none;
-$btn-border-width: 1px;
-$btn-border-style: solid;
+$btn-height: 48px !default;
+$btn-padding-x: 14px !default;
+$btn-text-font-size: $text-font-size-sm !default;
+$btn-text-line-height: $text-line-height-sm !default;
+$btn-text-decoration: none !default;
+$btn-border-width: 1px !default;
+$btn-border-style: solid !default;
 $buttons-sizes: (
   'lg': (
     'height': 56px,
@@ -345,134 +345,134 @@ $buttons-sizes: (
     'text-font-size': #{$text-font-size-xs},
     'text-line-height': #{$text-line-height-xs},
   ),
-);
+) !default;
 
 // Forms
-$form-label-margin-x: 4px;
-$form-label-margin-y: 2px;
-$form-label-font-size: 14px;
-$form-label-font-line-height: 24px;
-$form-label-color: $gray900;
+$form-label-margin-x: 4px !default;
+$form-label-margin-y: 2px !default;
+$form-label-font-size: 14px !default;
+$form-label-font-line-height: 24px !default;
+$form-label-color: $gray900 !default;
 
-$input-height: 32px;
-$input-padding-x: 12px;
-$input-padding-y: 6px;
-$input-bg: $white;
-$input-color: $gray800;
-$input-disabled-color: $gray400;
-$input-disabled-bg: $gray200;
-$input-disabled-border-color: $gray400;
-$form-control-padding-right: 16px;
-$form-control-font-size: 14px;
-$form-control-text-line-height: 20px;
-$form-control-zindex: $zindex-focused;
-$form-control-border-width: 1px;
-$form-control-border-color: $gray400;
-$form-control-border-radius: 4px;
-$form-control-focus-border-color: $blue600;
-$form-control-focus-box-shadow: 0 0 0 4px #4d73ff40;
+$input-height: 32px !default;
+$input-padding-x: 12px !default;
+$input-padding-y: 6px !default;
+$input-bg: $white !default;
+$input-color: $gray800 !default;
+$input-disabled-color: $gray400 !default;
+$input-disabled-bg: $gray200 !default;
+$input-disabled-border-color: $gray400 !default;
+$form-control-padding-right: 16px !default;
+$form-control-font-size: 14px !default;
+$form-control-text-line-height: 20px !default;
+$form-control-zindex: $zindex-focused !default;
+$form-control-border-width: 1px !default;
+$form-control-border-color: $gray400 !default;
+$form-control-border-radius: 4px !default;
+$form-control-focus-border-color: $blue600 !default;
+$form-control-focus-box-shadow: 0 0 0 4px #4d73ff40 !default;
 $form-control-transition:
   border-color 0.15s ease-in-out,
-  box-shadow 0.15s ease-in-out;
-$form-control-focus-valid-border-color: $green600;
-$form-control-focus-valid-box-shadow: 0 0 0 4px #06c75540;
-$form-control-focus-invalid-border-color: $red600;
-$form-control-focus-invalid-box-shadow: 0 0 0 4px #ff334b40;
+  box-shadow 0.15s ease-in-out !default;
+$form-control-focus-valid-border-color: $green600 !default;
+$form-control-focus-valid-box-shadow: 0 0 0 4px #06c75540 !default;
+$form-control-focus-invalid-border-color: $red600 !default;
+$form-control-focus-invalid-box-shadow: 0 0 0 4px #ff334b40 !default;
 
-$input-wrap-addon-position: 0;
-$input-wrap-addon-width: 30px;
-$input-wrap-addon-margin: 4px;
-$input-wrap-addon-btn-bg: transparent;
+$input-wrap-addon-position: 0 !default;
+$input-wrap-addon-width: 30px !default;
+$input-wrap-addon-margin: 4px !default;
+$input-wrap-addon-btn-bg: transparent !default;
 
-$form-check-input-width: 20px;
-$form-check-input-height: 20px;
-$form-check-input-bg: $white;
-$form-check-input-checked-bg: $green600;
-$form-check-input-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0175 4.95466L7.01152 12.4611L2.28003 7.49306L3.72831 6.11375L6.99682 9.54568L12.5554 3.59003L14.0175 4.95466Z' /%3E%3C/svg%3E");
-$form-check-radio-input-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' /%3E%3C/svg%3E");
-$form-check-input-border-width: 2px;
-$form-check-input-border-style: solid;
-$form-check-input-border-color: $gray350;
-$form-check-input-border-radius: 2px;
-$form-check-radio-border-radius: 50%;
-$form-check-input-label-font-size: $form-control-font-size;
-$form-check-input-label-text-line-height: $form-control-text-line-height;
+$form-check-input-width: 20px !default;
+$form-check-input-height: 20px !default;
+$form-check-input-bg: $white !default;
+$form-check-input-checked-bg: $green600 !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0175 4.95466L7.01152 12.4611L2.28003 7.49306L3.72831 6.11375L6.99682 9.54568L12.5554 3.59003L14.0175 4.95466Z' /%3E%3C/svg%3E") !default;
+$form-check-radio-input-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' /%3E%3C/svg%3E") !default;
+$form-check-input-border-width: 2px !default;
+$form-check-input-border-style: solid !default;
+$form-check-input-border-color: $gray350 !default;
+$form-check-input-border-radius: 2px !default;
+$form-check-radio-border-radius: 50% !default;
+$form-check-input-label-font-size: $form-control-font-size !default;
+$form-check-input-label-text-line-height: $form-control-text-line-height !default;
 $form-check-input-transition:
   border-color 0.15s ease-in-out,
-  background-color 0.15s ease-in-out !default;
-$form-check-input-disabled-input-bg: $gray250;
-$form-check-input-disabled-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0175 4.95466L7.01152 12.4611L2.28003 7.49306L3.72831 6.11375L6.99682 9.54568L12.5554 3.59003L14.0175 4.95466Z' /%3E%3C/svg%3E");
-$form-check-input-disabled-border-color: $gray300;
-$form-check-radio-disabled-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' /%3E%3C/svg%3E");
-$form-switch-width: 32px;
-$form-switch-bg: $form-check-input-border-color;
-$form-switch-border-radius: $form-switch-width;
-$form-switch-input-checked-bg: $form-check-input-checked-bg;
-$form-switch-input-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7' /%3E%3C/svg%3E");
+  background-color 0.15s ease-in-out !default!default;
+$form-check-input-disabled-input-bg: $gray250 !default;
+$form-check-input-disabled-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0175 4.95466L7.01152 12.4611L2.28003 7.49306L3.72831 6.11375L6.99682 9.54568L12.5554 3.59003L14.0175 4.95466Z' /%3E%3C/svg%3E") !default;
+$form-check-input-disabled-border-color: $gray300 !default;
+$form-check-radio-disabled-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' /%3E%3C/svg%3E") !default;
+$form-switch-width: 32px !default;
+$form-switch-bg: $form-check-input-border-color !default;
+$form-switch-border-radius: $form-switch-width !default;
+$form-switch-input-checked-bg: $form-check-input-checked-bg !default;
+$form-switch-input-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7' /%3E%3C/svg%3E") !default;
 $form-switch-input-transition:
   border-color 0.15s ease-in-out,
   background-color 0.15s ease-in-out,
-  background-position 0.15s ease-in-out;
-$form-switch-input-disabled-bg: $form-check-input-disabled-input-bg;
-$form-switch-input-disabled-border-color: $form-check-input-disabled-input-bg;
-$form-switch-input-disabled-bg-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'><circle cx='8' cy='8' r='7' /></svg>") !default;
-$form-switch-input-disabled-checked-bg: $gray350;
-$form-switch-input-disabled-checked-border-color: $gray350;
+  background-position 0.15s ease-in-out !default;
+$form-switch-input-disabled-bg: $form-check-input-disabled-input-bg !default;
+$form-switch-input-disabled-border-color: $form-check-input-disabled-input-bg !default;
+$form-switch-input-disabled-bg-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'><circle cx='8' cy='8' r='7' /></svg>") !default!default;
+$form-switch-input-disabled-checked-bg: $gray350 !default;
+$form-switch-input-disabled-checked-border-color: $gray350 !default;
 
-$form-check-margin-x: calc($form-check-input-width + $form-label-margin-x);
-$form-check-padding-x: $form-check-margin-x;
+$form-check-margin-x: calc($form-check-input-width + $form-label-margin-x) !default;
+$form-check-padding-x: $form-check-margin-x !default;
 
-$form-select-padding-x: $input-padding-x;
-$form-select-padding-y: $input-padding-y;
-$form-select-bg: $input-bg;
-$form-select-border-width: $form-control-border-width;
-$form-select-border-color: $form-control-border-color;
-$form-select-border-radius: $form-control-border-radius;
-$form-select-color: $input-color;
-$form-select-indicator-padding: 36px;
-$form-select-indicator: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.29297 6.20718L3.70718 4.79297L8.00008 9.08586L12.293 4.79297L13.7072 6.20718L8.00008 11.9143L2.29297 6.20718Z' fill='black'/%3E%3C/svg%3E%0A");
-$form-select-bg-size: 16px;
-$form-select-bg-position: right $form-select-padding-x center;
-$form-select-focus-border-color: $form-control-focus-border-color;
-$form-select-focus-box-shadow: $form-control-focus-box-shadow;
-$form-select-disabled-indicator: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.29297 6.20718L3.70718 4.79297L8.00008 9.08586L12.293 4.79297L13.7072 6.20718L8.00008 11.9143L2.29297 6.20718Z' fill='%23AFAFAF'/%3E%3C/svg%3E%0A");
-$form-select-disabled-bg: $input-disabled-bg;
-$form-select-disabled-border-color: $form-select-disabled-bg;
-$form-select-disabled-color: $input-disabled-color;
-$form-select-transition: $form-control-transition;
-$form-select-focus-valid-border-color: $form-control-focus-valid-border-color;
-$form-select-focus-valid-box-shadow: $form-control-focus-valid-box-shadow;
-$form-select-focus-invalid-border-color: $form-control-focus-invalid-border-color;
-$form-select-focus-invalid-box-shadow: $form-control-focus-invalid-box-shadow;
+$form-select-padding-x: $input-padding-x !default;
+$form-select-padding-y: $input-padding-y !default;
+$form-select-bg: $input-bg !default;
+$form-select-border-width: $form-control-border-width !default;
+$form-select-border-color: $form-control-border-color !default;
+$form-select-border-radius: $form-control-border-radius !default;
+$form-select-color: $input-color !default;
+$form-select-indicator-padding: 36px !default;
+$form-select-indicator: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.29297 6.20718L3.70718 4.79297L8.00008 9.08586L12.293 4.79297L13.7072 6.20718L8.00008 11.9143L2.29297 6.20718Z' fill='black'/%3E%3C/svg%3E%0A") !default;
+$form-select-bg-size: 16px !default;
+$form-select-bg-position: right $form-select-padding-x center !default;
+$form-select-focus-border-color: $form-control-focus-border-color !default;
+$form-select-focus-box-shadow: $form-control-focus-box-shadow !default;
+$form-select-disabled-indicator: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.29297 6.20718L3.70718 4.79297L8.00008 9.08586L12.293 4.79297L13.7072 6.20718L8.00008 11.9143L2.29297 6.20718Z' fill='%23AFAFAF'/%3E%3C/svg%3E%0A") !default;
+$form-select-disabled-bg: $input-disabled-bg !default;
+$form-select-disabled-border-color: $form-select-disabled-bg !default;
+$form-select-disabled-color: $input-disabled-color !default;
+$form-select-transition: $form-control-transition !default;
+$form-select-focus-valid-border-color: $form-control-focus-valid-border-color !default;
+$form-select-focus-valid-box-shadow: $form-control-focus-valid-box-shadow !default;
+$form-select-focus-invalid-border-color: $form-control-focus-invalid-border-color !default;
+$form-select-focus-invalid-box-shadow: $form-control-focus-invalid-box-shadow !default;
 
-$form-textarea-padding-x: 16px;
-$form-textarea-padding-y: $form-textarea-padding-x;
-$form-textarea-border-width: $form-control-border-width;
-$form-textarea-border-color: $form-control-border-color;
-$form-textarea-border-radius: $form-control-border-radius;
-$form-textarea-focus-border-color: $form-control-focus-border-color;
-$form-textarea-focus-box-shadow: $form-control-focus-box-shadow;
-$form-textarea-focus-valid-border-color: $form-control-focus-valid-border-color;
-$form-textarea-focus-valid-box-shadow: $form-control-focus-valid-box-shadow;
-$form-textarea-focus-invalid-border-color: $form-control-focus-invalid-border-color;
-$form-textarea-focus-invalid-box-shadow: $form-control-focus-invalid-box-shadow;
-$form-textarea-transition: $form-control-transition;
+$form-textarea-padding-x: 16px !default;
+$form-textarea-padding-y: $form-textarea-padding-x !default;
+$form-textarea-border-width: $form-control-border-width !default;
+$form-textarea-border-color: $form-control-border-color !default;
+$form-textarea-border-radius: $form-control-border-radius !default;
+$form-textarea-focus-border-color: $form-control-focus-border-color !default;
+$form-textarea-focus-box-shadow: $form-control-focus-box-shadow !default;
+$form-textarea-focus-valid-border-color: $form-control-focus-valid-border-color !default;
+$form-textarea-focus-valid-box-shadow: $form-control-focus-valid-box-shadow !default;
+$form-textarea-focus-invalid-border-color: $form-control-focus-invalid-border-color !default;
+$form-textarea-focus-invalid-box-shadow: $form-control-focus-invalid-box-shadow !default;
+$form-textarea-transition: $form-control-transition !default;
 
-$scrollbar-width: 8px;
-$scrollbar-track-bg: transparent;
-$scrollbar-thumb-bg: $gray700;
-$scrollbar-thumb-border-width: 0px;
-$scrollbar-thumb-border-radius: 8px;
+$scrollbar-width: 8px !default;
+$scrollbar-track-bg: transparent !default;
+$scrollbar-thumb-bg: $gray700 !default;
+$scrollbar-thumb-border-width: 0px !default;
+$scrollbar-thumb-border-radius: 8px !default;
 
 // Icon
-$icon-size: 20px;
+$icon-size: 20px !default;
 $icon-sizes: (
   lg: 24px,
   md: 20px,
   sm: 16px,
-);
-$icon-color: $black;
-$icon-colors: ();
+) !default;
+$icon-color: $black !default;
+$icon-colors: () !default;
 $icon-colors: map-merge(
   (
     'default': $icon-color,
@@ -484,78 +484,78 @@ $icon-colors: map-merge(
     'red': $red600,
   ),
   $icon-colors
-);
-$icon-position: 0;
+) !default;
+$icon-position: 0 !default;
 
 // Tabs
-$tab-border-width: 1px;
-$tab-border-color: $gray200;
-$tab-link-padding-x: 16px;
-$tab-link-padding-y: 10px;
-$tab-link-color: $blue400;
-$tab-link-text-font-size: $text-font-size-md;
-$tab-link-text-line-height: $text-line-height-md;
-$tab-link-text-margin-x: 2px;
-$tab-link-active-color: $blue700;
-$tab-link-indicator-color: $tab-link-active-color;
-$tab-link-indicator-height: 2px;
-$tab-content-margin-y: 16px;
-$tab-content-padding-x: 10px;
-$tab-pills-link-padding-x: calc(12px - #{$tab-link-text-margin-x});
-$tab-pills-link-padding-y: 4px;
-$tab-pills-link-bg: $gray200;
-$tab-pills-link-gap-x: 4px;
-$tab-pills-border-radius: 16px;
-$tab-pills-link-active-color: $white;
-$tab-pills-link-active-bg: $blue600;
-$tab-pills-link-active-icon-color: $tab-pills-link-active-color;
-$tab-inlines-link-padding-x: calc(#{$tab-link-padding-x} - #{$tab-link-text-margin-x});
-$tab-inlines-link-color: $black;
-$tab-inlines-link-active-color: $blue600;
-$tab-inlines-link-divider-height: 16px;
-$tab-inlines-link-divider-color: $gray300;
+$tab-border-width: 1px !default;
+$tab-border-color: $gray200 !default;
+$tab-link-padding-x: 16px !default;
+$tab-link-padding-y: 10px !default;
+$tab-link-color: $blue400 !default;
+$tab-link-text-font-size: $text-font-size-md !default;
+$tab-link-text-line-height: $text-line-height-md !default;
+$tab-link-text-margin-x: 2px !default;
+$tab-link-active-color: $blue700 !default;
+$tab-link-indicator-color: $tab-link-active-color !default;
+$tab-link-indicator-height: 2px !default;
+$tab-content-margin-y: 16px !default;
+$tab-content-padding-x: 10px !default;
+$tab-pills-link-padding-x: calc(12px - #{$tab-link-text-margin-x}) !default;
+$tab-pills-link-padding-y: 4px !default;
+$tab-pills-link-bg: $gray200 !default;
+$tab-pills-link-gap-x: 4px !default;
+$tab-pills-border-radius: 16px !default;
+$tab-pills-link-active-color: $white !default;
+$tab-pills-link-active-bg: $blue600 !default;
+$tab-pills-link-active-icon-color: $tab-pills-link-active-color !default;
+$tab-inlines-link-padding-x: calc(#{$tab-link-padding-x} - #{$tab-link-text-margin-x}) !default;
+$tab-inlines-link-color: $black !default;
+$tab-inlines-link-active-color: $blue600 !default;
+$tab-inlines-link-divider-height: 16px !default;
+$tab-inlines-link-divider-color: $gray300 !default;
 
 // Table
-$table-bg: $white;
-$table-border-width: 1px;
-$table-border-color: $gray200;
-$table-color: $gray700;
-$table-cell-padding-x: 8px;
-$table-cell-padding-y: 10px;
-$table-cell-vertical-align: middle;
-$table-cell-text-align: center;
-$table-cell-font-weight: $font-weight-base;
-$table-th-cell-padding-x: $table-cell-padding-x;
-$table-th-cell-padding-y: $table-cell-padding-y;
-$table-th-cell-color: $gray900;
-$table-th-cell-font-weight: $font-weight-bold;
-$table-active-bg: $gray200;
-$table-hover-bg: $table-active-bg;
+$table-bg: $white !default;
+$table-border-width: 1px !default;
+$table-border-color: $gray200 !default;
+$table-color: $gray700 !default;
+$table-cell-padding-x: 8px !default;
+$table-cell-padding-y: 10px !default;
+$table-cell-vertical-align: middle !default;
+$table-cell-text-align: center !default;
+$table-cell-font-weight: $font-weight-base !default;
+$table-th-cell-padding-x: $table-cell-padding-x !default;
+$table-th-cell-padding-y: $table-cell-padding-y !default;
+$table-th-cell-color: $gray900 !default;
+$table-th-cell-font-weight: $font-weight-bold !default;
+$table-active-bg: $gray200 !default;
+$table-hover-bg: $table-active-bg !default;
 
 // Modal
-$modal-width: 800px;
-$modal-zindex: $zindex-overlay;
-$modal-divider-color: $gray300;
-$modal-border-width: 1px;
-$modal-dialog-margin-y: 16px;
-$modal-dialog-margin-x: auto;
-$modal-content-border-color: $modal-divider-color;
-$modal-content-border-radius: 8px;
-$modal-header-padding-x: 16px;
-$modal-header-padding-y: $modal-header-padding-x;
-$modal-header-border-width: $modal-border-width;
-$modal-header-border-color: $modal-divider-color;
-$modal-header-button-padding-x: 0;
-$modal-header-button-padding-y: $modal-header-button-padding-x;
-$modal-header-button-bg: $white;
-$modal-body-margin-bottom: 16px;
-$modal-body-padding-x: 16px;
-$modal-body-padding-y: $modal-body-padding-x;
-$modal-footer-gap: 8px;
-$modal-footer-padding-x: 12px;
-$modal-footer-padding-y: $modal-footer-padding-x;
-$modal-footer-border-width: $modal-border-width;
-$modal-footer-border-color: $modal-divider-color;
+$modal-width: 800px !default;
+$modal-zindex: $zindex-overlay !default;
+$modal-divider-color: $gray300 !default;
+$modal-border-width: 1px !default;
+$modal-dialog-margin-y: 16px !default;
+$modal-dialog-margin-x: auto !default;
+$modal-content-border-color: $modal-divider-color !default;
+$modal-content-border-radius: 8px !default;
+$modal-header-padding-x: 16px !default;
+$modal-header-padding-y: $modal-header-padding-x !default;
+$modal-header-border-width: $modal-border-width !default;
+$modal-header-border-color: $modal-divider-color !default;
+$modal-header-button-padding-x: 0 !default;
+$modal-header-button-padding-y: $modal-header-button-padding-x !default;
+$modal-header-button-bg: $white !default;
+$modal-body-margin-bottom: 16px !default;
+$modal-body-padding-x: 16px !default;
+$modal-body-padding-y: $modal-body-padding-x !default;
+$modal-footer-gap: 8px !default;
+$modal-footer-padding-x: 12px !default;
+$modal-footer-padding-y: $modal-footer-padding-x !default;
+$modal-footer-border-width: $modal-border-width !default;
+$modal-footer-border-color: $modal-divider-color !default;
 
 $modal-sizes: (
   'lg': (
@@ -567,32 +567,32 @@ $modal-sizes: (
   'sm': (
     'width': 600px,
   ),
-);
+) !default;
 
 // Card
-$card-padding-x: 12px;
-$card-padding-y: 24px;
-$card-transition: all 0.15s linear;
-$card-box-shadow: 0 8px 24px 0 #00000026;
-$card-border-radius: 12px;
-$card-border-width: 1px;
-$card-border-color: $gray200;
-$card-thumbnail-margin-x: 6px;
-$card-thumbnail-margin-y: 8px;
-$card-thumbnail-bg: $blue300;
-$card-thumbnail-border-radius: $card-border-radius;
-$card-title-margin-x: 8px;
-$card-title-font-size: 24px;
-$card-title-line-height: 40px;
-$card-title-color: $gray900;
-$card-text-margin-x: 8px;
-$card-text-font-size: 16px;
-$card-text-line-height: 24px;
-$card-text-color: $gray700;
+$card-padding-x: 12px !default;
+$card-padding-y: 24px !default;
+$card-transition: all 0.15s linear !default;
+$card-box-shadow: 0 8px 24px 0 #00000026 !default;
+$card-border-radius: 12px !default;
+$card-border-width: 1px !default;
+$card-border-color: $gray200 !default;
+$card-thumbnail-margin-x: 6px !default;
+$card-thumbnail-margin-y: 8px !default;
+$card-thumbnail-bg: $blue300 !default;
+$card-thumbnail-border-radius: $card-border-radius !default;
+$card-title-margin-x: 8px !default;
+$card-title-font-size: 24px !default;
+$card-title-line-height: 40px !default;
+$card-title-color: $gray900 !default;
+$card-text-margin-x: 8px !default;
+$card-text-font-size: 16px !default;
+$card-text-line-height: 24px !default;
+$card-text-color: $gray700 !default;
 
 // Progress
-$progress-height: 18px;
-$progress-bg: $gray600;
-$progress-border-radius: 6px;
-$progress-font-size: 12px;
-$progress-color: $white;
+$progress-height: 18px !default;
+$progress-bg: $gray600 !default;
+$progress-border-radius: 6px !default;
+$progress-font-size: 12px !default;
+$progress-color: $white !default;
