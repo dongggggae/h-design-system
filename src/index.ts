@@ -1,3 +1,15 @@
+export { default as Accordion } from '@components/Accordion';
+export type { AccordionProps } from '@components/Accordion';
+
+export { default as AccordionItem } from '@components/Accordion/AccordionItem';
+export type { AccordionItemProps } from '@components/Accordion/AccordionItem';
+
+export { default as AccordionBody } from '@components/Accordion/AccordionBody';
+export type { AccordionBodyProps } from '@components/Accordion/AccordionBody';
+
+export { default as AccordionHeader } from '@components/Accordion/AccordionHeader';
+export type { AccordionHeaderProps } from '@components/Accordion/AccordionHeader';
+
 export { default as Badge } from '@components/Badge';
 export type { BadgeProps } from '@components/Badge';
 

@@ -399,7 +399,7 @@ $form-check-input-label-font-size: $form-control-font-size !default;
 $form-check-input-label-text-line-height: $form-control-text-line-height !default;
 $form-check-input-transition:
   border-color 0.15s ease-in-out,
-  background-color 0.15s ease-in-out !default!default;
+  background-color 0.15s ease-in-out !default;
 $form-check-input-disabled-input-bg: $gray250 !default;
 $form-check-input-disabled-checked-bg-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0175 4.95466L7.01152 12.4611L2.28003 7.49306L3.72831 6.11375L6.99682 9.54568L12.5554 3.59003L14.0175 4.95466Z' /%3E%3C/svg%3E") !default;
 $form-check-input-disabled-border-color: $gray300 !default;
@@ -415,7 +415,7 @@ $form-switch-input-transition:
   background-position 0.15s ease-in-out !default;
 $form-switch-input-disabled-bg: $form-check-input-disabled-input-bg !default;
 $form-switch-input-disabled-border-color: $form-check-input-disabled-input-bg !default;
-$form-switch-input-disabled-bg-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'><circle cx='8' cy='8' r='7' /></svg>") !default!default;
+$form-switch-input-disabled-bg-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23f5f5f5' xmlns='http://www.w3.org/2000/svg'><circle cx='8' cy='8' r='7' /></svg>") !default;
 $form-switch-input-disabled-checked-bg: $gray350 !default;
 $form-switch-input-disabled-checked-border-color: $gray350 !default;
 
